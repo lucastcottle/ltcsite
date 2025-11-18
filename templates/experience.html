@@ -1,0 +1,18 @@
+
+{{ define "title" }}Experience{{ end }}
+
+{{ define "content" }}
+<h1>Experience</h1>
+<ul>
+{{ range . }}
+  <li>
+    <strong>{{ .Title }}</strong> - {{ .StartDate }}
+    <p>{{ .Description }}</p>
+  </li>
+{{ end }}
+</ul>
+{{ end }}
+
+{{ define "experience" }}
+{{ template "base" . }}
+{{ end }}

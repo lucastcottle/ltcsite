@@ -1,0 +1,18 @@
+{{ define "title" }}Projects{{ end }}
+
+{{ define "content" }}
+<h1>Projects</h1>
+<ul>
+{{ range . }}
+  <li>
+    <a href="{{ .Url }}">{{ .Name }}</a>
+    <p>{{ .Description }}</p>
+  </li>
+{{ end }}
+</ul>
+{{ end }}
+
+{{ define "projects" }}
+{{ template "base" . }}
+{{ end }}
+

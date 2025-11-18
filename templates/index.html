@@ -1,0 +1,10 @@
+{{ define "title" }}Profile{{ end }}
+
+{{ define "content" }}
+<h1>{{ .Name }}</h1>
+<p>{{ .Tagline }}</p>
+{{ end }}
+
+{{ define "index" }}
+{{ template "base" . }}
+{{ end }}
